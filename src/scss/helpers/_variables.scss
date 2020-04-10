@@ -1,0 +1,64 @@
+/* ********** Custom Properties ********** */
+:root {
+
+  /*----------  Typography fonts  ----------*/
+  --main-font: 'camingocodebold', sans-serif;
+  --alternate-font: 'camingocoderegular', sans-serif;
+  --font-size: 16px;
+  --font-weight: 0.15em;
+  --line-height: 1.6;
+
+  --ratio: 1.333;
+  --base: 16px;
+  --line-height: var(--base);
+
+  --t4: calc(var(--base) * var(--ratio));
+  --t3: calc(var(--t4) * var(--ratio));
+  --t2: calc(var(--t3) * var(--ratio));
+  --t1: calc(var(--t2) * var(--ratio));
+
+
+  /*----------  Bases  ----------*/
+  --main-height: 50px;
+  --footer-base:80px;
+
+  --main-color: #FFF;
+  --main-modal-color: rgb(255, 255, 255, .75);
+  --second-color: #FFEF48;
+  --third-color: #4AFF75;
+  --quarter-color: #FF5F4A;
+  --messenger-color: #007CF8;
+  --second-modal-color: rgba(0, 0, 0, .75);
+  --alternate-color: #706F6F;
+  --alternate-modal-color: #474746;
+
+  --bg-color: var(--main-color);
+  --bg-modal-color: var(--main-modal-color);
+  --bg-alternate-color: #999;
+  --bg-alternate-modal-color: rgba(153, 153, 153, .75);
+  --border-color: #DDD;
+
+  --text-color: #242424;
+  --title-color: #333;
+
+  --link-color: var(--alternate-color);
+  --link-hover-color: var(--alternate-modal-color);
+
+  --max-width: 1200px;
+  --header-height: 5rem;
+
+  --logo-width: 4rem;
+  --logo-height: 4rem;
+  --logo-spacing: .5rem;
+}
+
+/* ********** Variables ********** */
+$breakpoints: (
+  xss: 20em, /* 320 / 16  */
+  xs: 30em, /* 480 / 16  */
+  s: 40em, /* 640 / 16  */
+  m: 45em, /* 720 / 16 */
+  l: 64em, /* 1024 / 16 */
+  xl: 90em, /* 1440/ 16 */
+  xxl: 100em /* 1600/ 16 */
+);

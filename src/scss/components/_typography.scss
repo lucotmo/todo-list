@@ -1,0 +1,75 @@
+/* ********** Typography ********** */
+@mixin t1 {
+  font-size: var(--t2);
+  line-height: calc(var(--line-height) * 7/3);
+  margin: calc(var(--line-height) / 3) 0 calc(var(--line-height) / 3) 0;
+  @media screen and (min-width: 640px){
+    font-size: var(--t2);
+    line-height: calc(var(--line-height) * 5/3);
+  }
+  @media screen and (min-width: 1024px){
+    font-size: --t1;
+    line-height: calc(var(--line-height) * 3);
+  }
+}
+
+@mixin t2 {
+  font-size: --t3;
+  line-height: calc(var(--line-height) * 5/3);
+  margin: calc(var(--line-height) / 3) 0 calc(var(--line-height) / 3) 0;
+  @media screen and (min-width: 640px){
+    font-size: --t3;
+    line-height: calc(var(--line-height) * 5/3);
+  }
+  @media screen and (min-width: 1024px){
+    font-size: var(--t2);
+    line-height: calc(var(--line-height) * 8/3);
+  }
+}
+
+@mixin t3 {
+  font-size: var(--t4);
+  line-height: calc(var(--line-height) * 8/6);
+  margin: calc(var(--line-height) / 3) 0 calc(var(--line-height) / 3) 0;
+  @media screen and (min-width: 640px){
+    font-size: var(--t4);
+  }
+  @media screen and (min-width: 1024px){
+    font-size: var(--t4);
+  }
+}
+
+h1{
+  @include t1;
+}
+
+
+h2 {
+  @include t2;
+}
+
+h3 {
+  @include t3;
+}
+
+p{
+  font-family: var(--alternate-font);
+  font-size: var(--base);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0;
+  line-height: calc(var(--line-height) * 7/6);
+  color: var(--alternate-color);
+}
+
+.font {
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right{
+    text-align: right;
+  }
+}

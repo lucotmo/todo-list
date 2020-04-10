@@ -1,0 +1,44 @@
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font), var(--alternate-font);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height:  var(--line-height);
+  color: var(--text-color);
+  background-color: var(--bg-modal-color);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100em;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: all .3s ease-out;
+
+  &:hover { color: var(--link-hover-color); }
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+::selection {
+  color: var(--main-color);
+  background-color: var(--text-color);
+}
